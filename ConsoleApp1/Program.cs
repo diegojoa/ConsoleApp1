@@ -201,7 +201,7 @@ class Program
 
         #endregion
 
-        #region ejemplo1
+        #region ejemplo1cap8
         //int[] arreglo = new int [10];
         //Console.WriteLine("{0}{1,8}", "inice", "valor");
 
@@ -211,6 +211,61 @@ class Program
         //}
 
         #endregion
+
+
+        #region ejemplo2cap8
+        //int[] arreglo = { 32, 37, 64, 18, 95, 14, 90, 70, 60, 37 };
+
+        //Console.WriteLine("{0}{1,8}", "indice", "valor");
+
+        //for (int contador = 0; contador < arreglo.Length; contador++)
+        //{
+        //    Console.WriteLine("{0,5}{1,8}", contador, arreglo[contador]);
+        //}
+        #endregion
+
+
+        #region ejemplo3cap8
+
+        //const int LONGITUD_ARREGLO = 10; //crear una constante con nombre
+        //int[] arreglo = new int[LONGITUD_ARREGLO]; //crear un arreglo
+
+        ////calcular el valor para cada elemnto del arreglo
+        //for (int contador = 0; contador < arreglo.Length; contador++)
+        //{
+        //    arreglo[contador] = 2 + 2  * contador;
+
+        //}
+        //Console.WriteLine("{0}{1,8}", "indice", "valor"); //encabezados
+
+
+        ////imprime en pantalla el valor de cada elemento del arreglo
+        //for(int contador = 0; contador < arreglo.Length;contador++)
+        //{
+        //    Console.WriteLine("{0,5}{1,8}", contador, arreglo[contador]);
+        //}
+
+        #endregion
+
+        #region ejemplo4cap8
+
+        //int[] arreglo = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
+        //int total = 0;
+
+        //for (int contador = 0; contador < arreglo.Length; contador++) 
+        //    {
+        //        total += arreglo[contador];
+        //    }
+
+        //    Console.WriteLine("EL total de la nota de los examenes es {0}: ", total);
+
+        #endregion
+
+
+
+
+
+
 
 
         #region triangulos
@@ -270,55 +325,69 @@ class Program
 
         #endregion
 
-        int sueldoDeEmpleados = 0;
-        int SueldosEntre100y300 = 0;
-        int sueldosMayor300 = 0;
-        double total = 0;
+        #region sueldoDeempleados
+
+        //int sueldoDeEmpleados = 0;
+        //int SueldosEntre100y300 = 0;
+        //int sueldosMayor300 = 0;
+        //double total = 0;
 
 
-        try
+        //try
+        //{
+        //    for (int i = 1; i <= 5; i++)
+        //    {
+        //        Console.WriteLine();
+        //        Console.WriteLine($"Escriba el saldo del empleado {i}");
+        //        sueldoDeEmpleados = int.Parse(Console.ReadLine());
+        //        total += sueldoDeEmpleados;
+
+        //        if (sueldoDeEmpleados >= 100 && sueldoDeEmpleados <= 300)
+        //        {
+        //            SueldosEntre100y300++;
+        //        }
+        //        else if (sueldoDeEmpleados > 300)
+        //        {
+        //            sueldosMayor300++;
+        //        }
+        //        if (sueldoDeEmpleados < 100)
+        //        {
+        //            Console.WriteLine("El sueldo de el empleado debe de ser entre 100 y 500");
+        //            break;
+        //        }
+        //        if (sueldoDeEmpleados > 500)
+        //        {
+        //            Console.WriteLine("El sueldo de el empleado debe de ser entre 100 y 500");
+        //            break;
+        //        }
+
+
+
+        //    }
+
+        //    Console.WriteLine($"La cantidad de empleados que cobran estre 100 y 300 pesos son: {SueldosEntre100y300}");
+        //    Console.WriteLine();
+        //    Console.WriteLine($"La cantidad de empleados que cobran mas de 300 pesos son: {sueldosMayor300}");
+        //    Console.WriteLine();
+        //    Console.WriteLine($"Los gastos totales de la compañia es de : {total}");
+
+        //}
+        //catch (Exception ex )
+        //{
+        //    Console.WriteLine(ex.Message);
+        //}
+        #endregion
+
+        int[] arreglo = new int[20];
+
+        for (int contador =  0;  contador < arreglo.Length; contador++)
         {
-            for (int i = 1; i <= 5; i++)
-            {
-                Console.WriteLine();
-                Console.WriteLine($"Escriba el saldo del empleado {i}");
-                sueldoDeEmpleados = int.Parse(Console.ReadLine());
-                total += sueldoDeEmpleados;
-
-                if (sueldoDeEmpleados >= 100 && sueldoDeEmpleados <= 300)
-                {
-                    SueldosEntre100y300++;
-                }
-                else if (sueldoDeEmpleados > 300)
-                {
-                    sueldosMayor300++;
-                }
-                if (sueldoDeEmpleados < 100)
-                {
-                    Console.WriteLine("El sueldo de el empleado debe de ser entre 100 y 500");
-                    break;
-                }
-                if (sueldoDeEmpleados > 500)
-                {
-                    Console.WriteLine("El sueldo de el empleado debe de ser entre 100 y 500");
-                    break;
-                }
-
-
-
-            }
-
-            Console.WriteLine($"La cantidad de empleados que cobran estre 100 y 300 pesos son: {SueldosEntre100y300}");
-            Console.WriteLine();
-            Console.WriteLine($"La cantidad de empleados que cobran mas de 300 pesos son: {sueldosMayor300}");
-            Console.WriteLine();
-            Console.WriteLine($"Los gastos totales de la compañia es de : {total}");
-
+            arreglo[contador] = contador * 5;
+            Console.WriteLine("{0,5}{1,8}",contador, arreglo[contador]);
         }
-        catch (Exception ex )
-        {
-            Console.WriteLine(ex.Message);
-        }
+
+        //Console.WriteLine("{0}{1,8}", "indice", "valor");
+
 
 
 
