@@ -386,7 +386,6 @@ class Program
             Console.WriteLine("{0,5}{1,8}",contador, arreglo[contador]);
         }
 
-        //Console.WriteLine("{0}{1,8}", "indice", "valor");
 
 
 
