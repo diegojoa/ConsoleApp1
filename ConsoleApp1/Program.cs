@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml.Schema;
 
 class Program
@@ -202,12 +203,12 @@ class Program
         #endregion
 
         #region ejemplo1cap8
-        //int[] arreglo = new int [10];
+        //int[] arreglo = new int[10];
         //Console.WriteLine("{0}{1,8}", "inice", "valor");
 
         //for (int contador = 0; contador < arreglo.Length; contador++)
         //{
-        //    Console.WriteLine("{0,5}{1,8}" , contador, arreglo[contador]);
+        //    Console.WriteLine("{0,5}{1,8}", contador, arreglo[contador]);
         //}
 
         #endregion
@@ -233,14 +234,14 @@ class Program
         ////calcular el valor para cada elemnto del arreglo
         //for (int contador = 0; contador < arreglo.Length; contador++)
         //{
-        //    arreglo[contador] = 2 + 2  * contador;
+        //    arreglo[contador] = 2 + 2 * contador;
 
         //}
         //Console.WriteLine("{0}{1,8}", "indice", "valor"); //encabezados
 
 
         ////imprime en pantalla el valor de cada elemento del arreglo
-        //for(int contador = 0; contador < arreglo.Length;contador++)
+        //for (int contador = 0; contador < arreglo.Length; contador++)
         //{
         //    Console.WriteLine("{0,5}{1,8}", contador, arreglo[contador]);
         //}
@@ -252,18 +253,95 @@ class Program
         //int[] arreglo = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
         //int total = 0;
 
-        //for (int contador = 0; contador < arreglo.Length; contador++) 
-        //    {
-        //        total += arreglo[contador];
-        //    }
+        //for (int contador = 0; contador < arreglo.Length; contador++)
+        //{
+        //    total += arreglo[contador];
+        //}
 
-        //    Console.WriteLine("EL total de la nota de los examenes es {0}: ", total);
+        //Console.WriteLine("EL total de la nota de los examenes es {0}: ", total);
 
         #endregion
 
+        #region ejemplo5cap8
+
+        //int[] arreglo = { 0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1 };
+        //Console.WriteLine("Distribuicion de las calificaciones:");
+
+        //for (int contador = 0; contador < arreglo.Length; contador++)
+        //{
+        //    if (contador == 10)
+        //    {
+        //        Console.Write("  100:  ");
+        //    }
+        //    else
+        //    {
+        //        Console.Write("{0:D2}-{1:D2}: ",
+        //            contador * 10, contador * 10 + 9);
+        //    }
+
+        //    for (int estrellas = 0; estrellas < arreglo[contador]; estrellas++)
+        //    {
+        //        Console.Write("*");
+        //    }
+
+        //    Console.WriteLine();
+        //}
+
+        #endregion
+
+        #region ejemplo6cap8
+
+        //Random numerosAleatorios = new Random();
+        //int[] frecuencia = new int[7];
+
+        //for (int tiro = 1; tiro <= 6000; tiro++)
+        //{
+        //    ++frecuencia[numerosAleatorios.Next(1, 7)];
+        //}
+
+        //Console.WriteLine("{0}{1,10}", "cara", "Frecueancia");
+
+        //for (int cara = 1; cara < frecuencia.Length; cara++)
+        //{
+        //    Console.WriteLine("{0,4}{1,10}", cara, frecuencia[cara]);
+        //}
+
+        #endregion
+
+        #region ejemplo7cap8
+
+        //int[] respuestas = { 1, 2, 6, 4, 8, 5, 9, 7, 8, 10, 1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7, 5, 6, 6, 5, 6, 7, 5, 6, 4, 8, 6, 8, 10 };
+        //int[] frecuencia = new int[11];
+
+        //for (int respuesta = 0; respuesta < respuestas.Length; respuesta++)
+        //{
+        //    ++frecuencia[respuestas[respuesta]];
+        //}
+
+        //Console.WriteLine("{0}{1,11}", "Calificacion", "Frecuencia");
+
+        //for (int calificacion = 1; calificacion < frecuencia.Length; calificacion++)
+        //{
+        //    Console.WriteLine("{0,12}{1,11}", calificacion, frecuencia[calificacion]);
+        //}
+
+        #endregion
+
+        #region ejemplo8cap8
+
+        //int[] arreglo = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };
+        //int total = 0;
 
 
+        //foreach (int numero in arreglo)
+        //{
+        //    total += numero;
+        //}
 
+        //Console.WriteLine("Total de elementos en el arreglo: {0}", total);
+
+
+        #endregion
 
 
 
@@ -378,13 +456,139 @@ class Program
         //}
         #endregion
 
-        int[] arreglo = new int[20];
 
-        for (int contador =  0;  contador < arreglo.Length; contador++)
-        {
-            arreglo[contador] = contador * 5;
-            Console.WriteLine("{0,5}{1,8}",contador, arreglo[contador]);
-        }
+
+
+
+
+
+
+        #region array1
+
+        //int[] arreglo = new int[20];
+
+        //for (int contador =  0;  contador < arreglo.Length; contador++)
+        //{
+        //    arreglo[contador] = contador * 5;
+        //    Console.WriteLine("{0,5}{1,8}",contador, arreglo[contador]);
+        //}
+
+        #endregion
+
+        #region array2
+
+        //int[] arreglo1 = new int[5];
+        //int[] arreglo2 = new int[5];
+        //int similitudes = 0;
+
+
+
+        //try
+        //{
+        //    Console.WriteLine("Escriba los 5 valores de la primera matriz: ");
+
+        //    for (int i = 0; i < arreglo1.Length; i++)
+        //    {
+        //        arreglo1[i] = int.Parse(Console.ReadLine());
+        //    }
+
+
+
+        //    Console.WriteLine("Escriba los 5 valores de la segunda matriz: ");
+
+        //    for (int j = 0; j < arreglo2.Length; j++)
+        //    {
+        //        arreglo2[j] = int.Parse(Console.ReadLine());
+        //    }
+
+
+
+        //    for (int i = 0; i < arreglo1.Length; i++)
+        //    {
+        //        for (int j = 0; j < arreglo2.Length; j++)
+
+        //            if (arreglo1[i] == arreglo2[j])
+        //            {
+        //                similitudes++;
+        //            }
+
+        //    }
+
+
+
+        //    Console.WriteLine($"Las similitudes son: {similitudes}");
+
+
+        //}
+        //catch (Exception e)
+        //{
+        //    Console.WriteLine(e.ToString());
+        //}
+
+        #endregion
+
+        #region array3
+
+        //int[] numeros = new int[5];
+        //int numerosRepetidos = 0;
+        //int numMenor = 0;
+
+        //try
+        //{
+        //    Console.WriteLine("Escriba 5 numeros: ");
+
+        //    for (int i = 0; i < numeros.Length; i++)
+        //    {
+
+        //        numeros[i] = int.Parse(Console.ReadLine());
+        //        numMenor = numeros[i];
+        //    }
+
+        //    for (int i = 0; i < numeros.Length; i++)
+        //    {
+        //        if (numeros[i] < numMenor)
+        //        {
+        //            numMenor = numeros[i];
+        //        }
+        //    }
+
+        //    Console.WriteLine();
+        //    Console.WriteLine($"EL numero de Menor valor es el de: {numMenor}");
+
+        //    for (int i = 0; i < numeros.Length; i++)
+        //    {
+        //        int b = i + 1;
+
+        //        for (int j = b; j < numeros.Length; j++)
+        //        {
+        //            if (numeros[i] == numeros[j])
+        //            {
+        //                numerosRepetidos++;
+        //            }
+        //        }
+
+        //    }
+
+        //    if (numerosRepetidos > 0)
+        //    {
+        //        Console.WriteLine("Un valor se repite por lo menos una vez");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine();
+        //        Console.WriteLine("No hay valores repetidos");
+        //    }
+        //}
+        //catch (Exception m)
+        //{
+        //    Console.WriteLine(m.Message);
+        //}
+
+        #endregion
+
+
+
+
 
 
 
@@ -395,8 +599,6 @@ class Program
 
 
 
-
-
-
 }
+
 
