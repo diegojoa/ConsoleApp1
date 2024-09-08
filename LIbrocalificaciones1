@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    //public class LibroCalificaciones
+    //{
+    //    private string nombreCurso;
+
+    //    public LibroCalificaciones(string nombre)
+    //    {
+    //         nombreCurso = nombre;
+    //    }
+
+    //    public string NombreCurso
+    //    {
+    //        get
+    //        {
+    //            return nombreCurso;
+    //        }
+    //        set
+    //        {
+    //            nombreCurso = value;
+    //        }
+
+    //    }
+
+
+    //    public void Mostrarmensaje()
+    //    {
+    //        Console.WriteLine("Bienvenido al curso de calificaciones para\n{0}!",
+    //            NombreCurso);
+    //    }
+
+    //}
+}
