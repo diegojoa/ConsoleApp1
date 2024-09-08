@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    //public class PruebaLibroCalificaciones
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        LibroCalificaciones libroCalificaciones1 = new LibroCalificaciones(
+    //            "CS101 Introduccion a la programacion en c#");
+
+    //        LibroCalificaciones libroCalificaciones2 = new LibroCalificaciones(
+    //            "CS102 Estructuras de datos en c#");
+
+    //        Console.WriteLine("El nombre del curso de libroClificaciones1 es:{0}",
+    //            libroCalificaciones1.NombreCurso);
+    //        Console.WriteLine("El nombre del curso de libroCalificaciones2 es:{0}",
+    //            libroCalificaciones2.NombreCurso);
+
+    //    }
+    //}
+}
