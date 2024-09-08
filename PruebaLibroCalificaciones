@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    //public class PruebaLibroClificaciones
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        LibroDeCalificaciones miLibroDeCalificaciones = new LibroDeCalificaciones();
+
+    //        Console.WriteLine("El nombre inical del curso es: '{0}'\n"
+    //            , miLibroDeCalificaciones.NombreCurso);
+
+    //        Console.WriteLine("Por favor escriba el nombre del curso:");
+    //        string elnombre = Console.ReadLine();
+    //        miLibroDeCalificaciones.NombreCurso = elnombre;
+    //        Console.WriteLine();
+
+    //        miLibroDeCalificaciones.MostrarMensje();
+    //    }
+    //}
+}
+;
